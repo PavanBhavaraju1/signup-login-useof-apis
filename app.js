@@ -20,11 +20,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.use(session({
-  secret: process.env.SECRET,
-  resave: false,
-  saveUninitialized: false
-}));
+
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -38,7 +34,6 @@ const userSchema = new mongoose.Schema ({
   email: String,
   password: String,
   phoneno: String,
-  googleId: String,
   secret: String
 });
 
