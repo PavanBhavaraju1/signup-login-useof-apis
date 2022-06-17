@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+
+
+<body  >
+
+<p> Username :<%= "" +f +""+ l %></p>
+<p> phoneno:<%= "" +p %></p>
+<p> Email:<%= "" +e %></p>
+<hr/>
+<br>
+  <form action="/weather" method="post">
+    <h2>Enter city name to know the weather</h2>
+    <label for="cityInput">CityName</label>
+    <input id ="cityInput" type="text" name="CityName">
+    <button type="submit">GO!</button>
+
+  </form>
+  
+</body>
+
+<%- include('partials/header') %>
